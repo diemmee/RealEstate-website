@@ -46,13 +46,19 @@ a {
 /* ==== Header ==== */
 
 .header {
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
     background: #e6f0ff;
 }
 
-.header .navbar {
+.navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
 }
 
 .header .navbar ul {
@@ -67,7 +73,7 @@ a {
     margin-left: 50px;
 }
 
-.navbar ul li {
+.navbar li a {
     color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
@@ -168,6 +174,7 @@ a {
     margin-top: 70px;
     justify-content: space-between;
 }
+
 
 /* ==== guides ==== */
 .guides {
@@ -533,37 +540,40 @@ a {
     right: 221px;
 }
 
-/* ==== subscription ==== */
-.subscription {
+/* ==== footer ==== */
+.footer {
     margin-top: 55px;
     padding: 50px 0 58px;
 }
 
-.subscription .list-types {
+.footer .list-types {
     display: flex;
     margin-left: -185px;
 }
 
-.subscription .name {
+.footer .name {
     color: #1c1c1d;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: calc(42px - 9px);
 }
 
-.subscription .list-item {
+.footer .list-item {
     margin-left: 185px;
 }
 
-.subscription .list-item .desc {
+.footer .list-item .desc {
     color: #7a7a7e;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
 }
+.footer .list-item .desc:hover {
+    text-decoration: underline;
+}
 
-.subscription ul a {
+.footer ul a {
     display: inline-block;
     color: #7a7a7e;
     font-size: 1.6rem;
@@ -571,18 +581,22 @@ a {
     padding: 9px 0;
 }
 
-.subscription .social {
+.footer ul a:hover {
+    text-decoration: underline;
+}
+
+.footer .social {
     margin-top: 40px;
 }
 
-.subscription .row {
+.footer .row {
     margin-top: 81px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.subscription .coppyright {
+.footer .coppyright {
     color: #c2c2c2;
     font-size: 1.4rem;
     font-weight: 400;
